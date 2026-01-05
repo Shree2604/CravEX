@@ -1,9 +1,3 @@
-
-# Hardcoding Username & Password for the sake of Demonstration and formation of initial Draft.
-
-#students_data = {"student01":"1234"}
-
-#vendors_data = {"vendor01" : "5678"}
 import json
 
 r = None
@@ -161,8 +155,6 @@ def menu2() :
     
 
 
-
-
 # -----------------User Dashboards--------------------
 
 def student_dashboard() :
@@ -253,7 +245,6 @@ def login() :
 #----------------New User Registeration---------------
 
 def register() :
-
     
 
     user_type = input("Enter 'S' or 's' for student else Enter 'V' or 'v' for Vendor\n") 
@@ -285,7 +276,6 @@ def register() :
                 print("Both of Your Entered Passwords must match")
                 r = input("Preess Any Key to Continue") 
                 register()
-
 
 
 
