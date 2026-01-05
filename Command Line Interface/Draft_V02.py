@@ -1,10 +1,10 @@
 
 # Hardcoding Username & Password for the sake of Demonstration and formation of initial Draft.
 
-students_data = {"student01":"1234"}
+#students_data = {"student01":"1234"}
 
-vendors_data = {"vendor01" : "5678"}
-
+#vendors_data = {"vendor01" : "5678"}
+import json
 
 r = None
 order = {}
@@ -200,6 +200,12 @@ def login() :
 
     if user_type == 's' or user_type == 'S' :
 
+        f = open("students_data.json","r")
+        data = f.read()
+        f.close()
+
+        students_data = json.loads(data)
+
         if username in students_data :
 
             if students_data[username] == password :
@@ -216,6 +222,12 @@ def login() :
             login()  
 
     elif user_type == 'v' or user_type == 'V' :
+
+        f1 = open("vendors_data.json","r")
+        data = f1.read()
+        f1.close()
+
+        vendors_data = json.loads(data)
 
         if username in vendors_data :
 
@@ -241,10 +253,19 @@ def login() :
 #----------------New User Registeration---------------
 
 def register() :
+
+    
+
     user_type = input("Enter 'S' or 's' for student else Enter 'V' or 'v' for Vendor\n") 
     # We'll Modify the required Database based on the User Type
 
     if user_type == 's' or user_type == 'S' :
+
+        f = open("students_data.json","r")
+        data = f.read()
+        f.close()
+
+        students_data = json.loads(data)
 
         u1 = input("Enter Username\n")
         if (not u1 in students_data) :
@@ -253,6 +274,10 @@ def register() :
 
             if p1 == p2 :
                 students_data[u1]=p1
+                data1 = json.dumps(students_data)
+                f = open("students_data.json","w")
+                f.write(data1)
+                f.close()
                 print("Registration Successful")
                 start()
             
@@ -271,6 +296,12 @@ def register() :
 
     elif user_type == 'v' or user_type == 'V' :
 
+        f1 = open("vendors_data.json","r")
+        data = f1.read()
+        f1.close()
+
+        vendors_data = json.loads(data)
+
         v1 = input("Enter Username\n")
         if (not v1 in vendors_data) :
             vp1 = input("Enter your Password\n")
@@ -278,6 +309,10 @@ def register() :
 
             if vp1 == vp2 :
                 vendors_data[v1]=vp1
+                data1 = json.dumps(vendors_data)
+                f = open("vendors_data.json","w")
+                f.write(data1)
+                f.close()
                 print("Registration Successful")
                 start()
             
@@ -285,7 +320,13 @@ def register() :
                 print("Both of Your Entered Passwords must match")
                 r = input("Preess Any Key to Continue") 
                 register()  
-    
+
+        else :
+            print("ENTERED Username Not AVAILABLE")
+            r = input("Preess Any Key to Continue") 
+            register()
+
+
     else : 
         print("Masti nahi")
         r = input("Preess Any Key to Continue")
@@ -309,3 +350,6 @@ def start () :
 #-----------------------------------------------------
 
 start()
+
+# import os 
+# print(os.getcwd())
