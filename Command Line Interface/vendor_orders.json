@@ -2,20 +2,19 @@
     "101": {
         "dish": "Dish number 1",
         "qty": 2,
-        "time": "01:48",
+        "time": "03:50",
         "status": 0
     },
     "102": {
         "dish": "Dish number 2",
         "qty": 1,
-        "time": "01:48",
+        "time": "03:50",
         "status": 0
     },
     "103": {
         "dish": "Dish number 1",
         "qty": 3,
-        "time": "01:48",
+        "time": "03:50",
         "status": 0
     }
-    
 }
