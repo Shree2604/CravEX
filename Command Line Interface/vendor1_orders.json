@@ -1,0 +1,59 @@
+{
+    "101": {
+        "dish": "Dish no. 1",
+        "qty": 3,
+        "time": "03:55",
+        "status": 0
+    },
+    "102": {
+        "dish": "Dish no. 2",
+        "qty": 2,
+        "time": "03:56",
+        "status": 1
+    },
+    "103": {
+        "dish": "Dish no. 1",
+        "qty": 3,
+        "time": "00:13",
+        "status": 0
+    },
+    "104": {
+        "dish": "Dish no. 2",
+        "qty": 1,
+        "time": "00:23",
+        "status": 0
+    },
+    "105": {
+        "items": {
+            "Dish no. 2": 2
+        },
+        "total": 160,
+        "time": "01:26",
+        "status": 0
+    },
+    "106": {
+        "items": {
+            "Dish no. 2": 2
+        },
+        "total": 160,
+        "time": "01:41",
+        "status": 1
+    },
+    "107": {
+        "items": {
+            "Dish no. 1": 1,
+            "Dish no. 2": 2
+        },
+        "total": 260,
+        "time": "01:56",
+        "status": 1
+    },
+    "108": {
+        "items": {
+            "Dish no. 1": 1
+        },
+        "total": 100,
+        "time": "02:03",
+        "status": 0
+    }
+}
