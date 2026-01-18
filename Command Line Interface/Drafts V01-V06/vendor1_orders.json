@@ -3,7 +3,7 @@
         "dish": "Dish no. 1",
         "qty": 3,
         "time": "03:55",
-        "status": 0
+        "status": 1
     },
     "102": {
         "dish": "Dish no. 2",
@@ -15,13 +15,13 @@
         "dish": "Dish no. 1",
         "qty": 3,
         "time": "00:13",
-        "status": 0
+        "status": 1
     },
     "104": {
         "dish": "Dish no. 2",
         "qty": 1,
         "time": "00:23",
-        "status": 0
+        "status": 1
     },
     "105": {
         "items": {
@@ -54,6 +54,14 @@
         },
         "total": 100,
         "time": "02:03",
+        "status": 1
+    },
+    "109": {
+        "items": {
+            "Dish no. 1": 4
+        },
+        "total": 400,
+        "time": "00:03",
         "status": 0
     }
 }

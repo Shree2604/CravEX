@@ -3,7 +3,7 @@
         "dish": "Dish number 1",
         "qty": 2,
         "time": "03:50",
-        "status": 0
+        "status": 1
     },
     "102": {
         "dish": "Dish number 2",
